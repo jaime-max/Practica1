@@ -1,0 +1,70 @@
+#formacion li, #experiencia li{
+    color: royalblue;
+}
+
+#formacion li strong,#experiencia li strong{
+    color: seagreen;
+}
+@media(min-width:1201px){
+    #datos{
+        float: left;/*float para mover a la derecha al 30% del tamano de la ventana*/
+        width: 30%;
+    }
+    #curriculo{
+        float: left;
+        width: 70%;/*70 el tipo relativo*/
+    }
+    #formacion{
+        float: left;
+        width: 50%;
+    }
+    #experiencia{
+        float: left;
+        width: 50%;
+    }
+}    
+@media(min-width: 601px) and (max-width: 1200px){/*cuando el ancho sea minimo es decir este entre 601 hasta 1200*/
+    body{
+        font-family: Arial,sans-serif;
+    }
+    #datos{
+        float: left;/*float para mover a la derecha al 30% del tamano de la ventana*/
+        width: 30%;
+    }
+    #curriculo{
+        float: left;
+        width: 70%;/*70 el tipo relativo*/
+    }
+    #datos ul{
+        list-style-type: none;
+        padding: 0;
+    }
+    #datos li + li{
+        margin-top: 10px;
+    }
+    #datos li strong{
+        display: block;
+    }
+}
+@media(max-width: 600px){
+    body{
+        font-family: Georgia,serif;
+    }
+    h1{
+       font-size: 1.5em; 
+    }
+    h2{
+        font-size: 1.2em;
+        border-bottom: 1px solid #000;
+    }
+    ul{/*quitar todos los estilos a los ul*/
+        list-style: none;
+        padding: 0;
+    }
+    li + li{
+        margin-top: 10px;
+    }
+    li strong{
+        display: block;
+    }
+}    
